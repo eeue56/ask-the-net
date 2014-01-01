@@ -7,6 +7,7 @@
 ; strings is a list of strings
 ; returns the strings joined together by nothing
 to-report join [strings]
+  if empty? strings [ report "" ] 
   report reduce [(word ?1 ?2)] strings
 end
 
@@ -16,5 +17,6 @@ end
 ; strings is a list of strings
 ; returns the strings joined together by joiner
 to-report join-by [joiner strings]
+  if empty? strings [ report "" ]
   report reduce [(word ?1 joiner ?2)] strings
 end
