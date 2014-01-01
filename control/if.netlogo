@@ -1,0 +1,13 @@
+
+; something *must* be a true or false value or expression.
+
+if something [
+  show "something was true!"
+]
+
+ifelse something [
+ show "something was true!" 
+]
+[
+  show "something was false!"
+]
